@@ -33,7 +33,10 @@ static char leftNameKey;
     
     if (topEdge && rightEdge && bottomEdge && leftEdge)
     {
-        return CGRectMake(self.bounds.origin.x - leftEdge.floatValue,self.bounds.origin.y - topEdge.floatValue, self.bounds.size.width + leftEdge.floatValue + rightEdge.floatValue,self.bounds.size.height + topEdge.floatValue + bottomEdge.floatValue);
+        return CGRectMake(self.bounds.origin.x - leftEdge.floatValue,
+                          self.bounds.origin.y - topEdge.floatValue,
+                          self.bounds.size.width + leftEdge.floatValue + rightEdge.floatValue,
+                          self.bounds.size.height + topEdge.floatValue + bottomEdge.floatValue);
     }
     else
     {
